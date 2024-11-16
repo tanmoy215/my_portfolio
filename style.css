@@ -1,0 +1,1165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+/* Navigation Bar */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.logo {
+    max-height: 60px;
+}
+
+/* Navigation Links */
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fd4766;
+}
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fd4766;
+    transition: width 0.3s ease;
+    bottom: -5px;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+
+
+/* Button Styles */
+.btn {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    background: #fd4766;
+    border: 2px solid #fd4766;
+    background-size: 150% 100%;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #fd4766;
+}
+
+/* Content Section */
+.content {
+    text-align: left;
+    max-width: 600px;
+    color: #333;
+    margin-left: 10px;
+    position: relative;
+    top: 20vh;
+    left: 21vh;
+}
+
+.content h1 span {
+    color: #fd4766;
+}
+
+.content p {
+    margin: 20px 0 30px;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.subtitle{
+    opacity: 0.5;
+    padding-left: 50px;
+}
+/* Responsive Design */
+
+/* For larger screens */
+@media (min-width: 1200px) {
+    .content h1 {
+        font-size: 72px;
+        line-height: 1.1;
+    }
+    .btn {
+        padding: 12px 40px;
+    }
+}
+
+/* For tablets and small laptops (up to 1024px) */
+@media (max-width: 1024px) {
+    nav {
+        padding: 20px 40px;
+    }
+    .content h1 {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+    .content p {
+        font-size: 16px;
+    }
+}
+
+/* For mobile devices in landscape mode and small tablets (up to 768px) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .hero {
+        padding: 20px;
+        height: 100vh;
+    }
+    .content {
+        text-align: center;
+        padding: 0 10px;
+    }
+    .content h1 {
+        font-size: 40px;
+    }
+    .content p {
+        font-size: 16px;
+        line-height: 1.5;
+        width: 100%;
+    }
+}
+
+/* For mobile devices in portrait mode (up to 480px) */
+@media (max-width: 480px) {
+    nav {
+        padding: 15px 20px;
+    }
+    .logo {
+        max-height: 50px;
+    }
+    .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .content h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    .content p {
+        font-size: 14px;
+    }
+}
+
+/* Small adjustments for very small mobile screens (up to 360px) */
+@media (max-width: 360px) {
+    .content h1 {
+        font-size: 28px;
+    }
+    .content p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+    .btn {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+}
+
+.back_img{
+    position: absolute;
+    left: 75vh;
+    height: 700px;
+    width: 800px;
+     background-image: url(tanmoy.gif);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About section */
+
+
+
+
+
+
+/* General Section Styling */
+.fst {
+    margin-top: 45%;
+    padding: 20px;
+}
+
+/* About Section Styling */
+.tom {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+/* Title Styling */
+.tom h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: bold;
+}
+
+.tom h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #fd4766;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Card Container Styling */
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Card Styling */
+.majee {
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: linear-gradient(135deg, rgb(232, 24, 107), #ff6);
+    color: white;
+}
+
+/* Card Content - Ensure Vertical Layout */
+.card-content {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;     /* Center the content horizontally */
+    gap: 15px;
+}
+
+/* Card Hover Effects */
+.majee:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: pulse 1s infinite;
+}
+
+/* Card Heading */
+.card-heading {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Card Paragraphs */
+.majee p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Image Styling */
+.card-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+/* Animated Pulse Effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .about {
+        padding: 20px;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .card-heading {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .card-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Adjust grid layout for smaller screens */
+    .cards-wrapper {
+        grid-template-columns: 1fr 1fr;  /* 2 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust grid layout for very small screens */
+    .cards-wrapper {
+        grid-template-columns: 1fr;  /* 1 column */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Education Section */
+
+
+
+
+
+
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+}
+
+/* Education Section Styling */
+.snd {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    margin-top: 5%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.education h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.education h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #3498db;  /* Accent color - Blue */
+    display: block;
+    margin: 15px auto;
+}
+
+/* Education Cards Container */
+.education-cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+    gap: 30px;
+    margin-top: 40px;
+    position: relative;
+}
+
+/* Education Card Styling */
+.education-card {
+    background: linear-gradient(135deg, #1abc9c, #3498db, #95a5a6);  /* Green, Blue, Gray Gradient */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    color: white;
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.3s ease, opacity 0.5s ease;
+    overflow: hidden;
+    perspective: 1000px;  /* Add perspective for 3D effect */
+    opacity: 0;
+    animation: slideUp 0.8s forwards;
+}
+
+/* Default state for hidden cards (Asnan & Dakshine) */
+.education-card.asnan, .education-card.dakshine {
+    opacity: 0;
+    transform: translateY(50px);  /* Initially hidden */
+}
+
+.education-card.brainware:hover ~ .asnan, 
+.education-card.brainware:hover ~ .dakshine {
+    opacity: 1;
+    transform: translateY(0);  /* Reveal cards when Brainware card is hovered */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.education-card:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.education-card:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.education-card:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+/* Card Hover Effects */
+.education-card:hover {
+    transform: translateY(-10px) rotateY(5deg) rotateX(5deg);  /* Slight 3D tilt effect */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);  /* More intense shadow on hover */
+    filter: brightness(1.1);  /* Slight brightness increase on hover */
+}
+
+/* Card Header (School/University Name & Board) */
+.edu-header {
+    position: relative;
+    color: white;
+    z-index: 1;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    text-align: center;  /* Center-align text */
+}
+
+.edu-header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.edu-header h6, .edu-header h4 {
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;  /* Center-align text */
+}
+
+/* Card Body (Details of Class and Grades) */
+.edu-body {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.edu-body h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.edu-body p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+/* Slide-up Animation */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade-in Animation for the Section Title */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add Colorful Border Animation */
+.education-card::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: linear-gradient(45deg, #3498db, #1abc9c, #95a5a6);  /* Gradient Border */
+    z-index: 0;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.education-card:hover::before {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education h2 {
+        font-size: 2.2rem;
+    }
+
+    .education-card {
+        padding: 25px;
+    }
+
+    .edu-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .edu-header h6, .edu-header h4 {
+        font-size: 1rem;
+    }
+
+    .edu-body h5 {
+        font-size: 1.3rem;
+    }
+
+    .edu-body p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-card {
+        padding: 20px;
+    }
+
+    .edu-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .edu-header h6, .edu-header h4 {
+        font-size: 0.9rem;
+    }
+
+    .edu-body h5 {
+        font-size: 1.2rem;
+    }
+
+    .edu-body p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Skills Section */
+
+
+
+.trd {
+    margin-top: 9%;
+}
+
+/* Pie Chart Container */
+.pie-chart-container {
+    display: flex;
+    justify-content: center; /* Centers pie chart and legend horizontally */
+    align-items: center;
+    margin: 40px auto;
+    text-align: center;
+    flex-wrap: wrap; /* Makes the legend move below the chart on smaller screens */
+}
+
+/* Pie Chart Styling */
+.pie-chart {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #fd4766 0% 40%,  /* Front-End Development: 40% */
+        #36a2eb 40% 70%, /* Back-End Development: 30% */
+        #ffce56 70% 90%, /* Other Tools: 20% */
+        #4bc0c0 90% 100% /* Soft Skills: 10% */
+    );
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Pie Chart */
+.pie-chart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Skills Legend Section */
+.skills-legend {
+    width: 250px;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+/* Legend Item Styling */
+.legend-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Legend Color Box */
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Color for Each Skill in Legend */
+.legend-item.front-end .legend-color {
+    background-color: #fd4766;
+}
+
+.legend-item.back-end .legend-color {
+    background-color: #36a2eb;
+}
+
+.legend-item.other-tools .legend-color {
+    background-color: #ffce56;
+}
+
+.legend-item.soft-skills .legend-color {
+    background-color: #4bc0c0;
+}
+
+/* Skill Cards Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Skill Card Styling */
+.skill-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Skill Card Title */
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Skill Card Description */
+.skill-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Front-End Skill Card */
+.skill-card.front-end {
+    border-left: 5px solid #fd4766;
+}
+
+/* Back-End Skill Card */
+.skill-card.back-end {
+    border-left: 5px solid #36a2eb;
+}
+
+/* Other Tools Skill Card */
+.skill-card.other-tools {
+    border-left: 5px solid #ffce56;
+}
+
+/* Soft Skills Skill Card */
+.skill-card.soft-skills {
+    border-left: 5px solid #4bc0c0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .pie-chart-container {
+        flex-direction: column; /* Stacks chart and legend */
+    }
+
+    .skills-legend {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills h2 {
+        font-size: 2rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr; /* Single column layout for skill cards */
+    }
+
+    .skills-legend {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .legend-item {
+        font-size: 1rem;
+    }
+
+    .pie-chart {
+        width: 250px;
+        height: 250px; /* Reduce pie chart size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills h2 {
+        font-size: 1.8rem;
+    }
+
+    .pie-chart {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skills-legend {
+        font-size: 0.9rem;
+    }
+
+    .skill-card {
+        padding: 15px;
+    }
+
+    .skill-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .skill-card p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* project Section */
+
+
+
+
+
+
+.fut {
+    margin-top: 10%;
+}
+
+/* Project Section Styling */
+.projects {
+    background: #f8f8f8; /* Light background for better contrast */
+    padding: 60px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+/* Title Styling */
+.projects h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: bold;
+}
+
+.projects h2::after {
+    content: "";
+    width: 60px;
+    height: 6px;
+    background-color: #fd4766; /* Accent color */
+    display: block;
+    margin: 15px auto;
+}
+
+/* Card Container Styling */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Card Styling */
+.project-card {
+    position: relative;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    background: linear-gradient(135deg, #fc5c7d, #6a82fb);  /* Soft gradient background */
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Card Hover Effects */
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d); /* Inverted gradient on hover */
+    animation: pulse 1.5s infinite;  /* Pulse animation */
+}
+
+/* Project Card Heading */
+.project-title {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Project Description */
+.project-description {
+    font-size: 1rem;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Image Styling */
+.project-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+/* Animated Pulse Effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    }
+}
+
+/* Project Links (Buttons) Styling */
+.project-links .btn {
+    background: #fd4766;  /* Coral button background */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect on Button */
+.project-links .btn:hover {
+    background-color: #ff6f61;  /* Slightly darker coral on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .projects h2 {
+        font-size: 2.2rem;
+    }
+
+    .project-title {
+        font-size: 1.4rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+
+    .project-links .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Adjust grid layout for smaller screens */
+    .project-grid {
+        grid-template-columns: 1fr 1fr;  /* 2 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust grid layout for very small screens */
+    .project-grid {
+        grid-template-columns: 1fr;  /* 1 column */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer section */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #1a1a2e;
+    color: #eaeaea;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-about,
+.footer-contact,
+.footer-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #fd4766;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+p,
+ul {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+a {
+    color: #eaeaea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fd4766;
+}
+
+/* Social Links */
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social li {
+    margin: 10px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-about,
+    .footer-contact,
+    .footer-social {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
