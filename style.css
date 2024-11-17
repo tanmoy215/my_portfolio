@@ -115,130 +115,95 @@ nav ul li a:hover:after {
 /* Responsive Design */
 
 /* For larger screens */
-/* Large Screens and Laptops (1200px and above) */
 @media (min-width: 1200px) {
     .content h1 {
-        font-size: 64px; /* Balanced size for large displays */
-        line-height: 1.2;
-        margin-bottom: 20px;
-    }
-    .content p {
-        font-size: 18px;
-        line-height: 1.6;
-        max-width: 800px;
-        margin: 0 auto;
+        font-size: 72px;
+        line-height: 1.1;
     }
     .btn {
-        padding: 12px 36px; /* Proportional button size */
-        font-size: 18px;
-    }
-    nav {
-        padding: 20px 60px; /* Roomier padding for spacious layout */
+        padding: 12px 40px;
     }
 }
 
-/* For Tablets and Small Laptops (Up to 1024px) */
+/* For tablets and small laptops (up to 1024px) */
 @media (max-width: 1024px) {
     nav {
-        padding: 15px 40px; /* Compact padding */
+        padding: 20px 40px;
     }
     .content h1 {
-        font-size: 48px; /* Reduced heading size */
-        line-height: 1.3;
+        font-size: 48px;
+        line-height: 1.2;
     }
     .content p {
         font-size: 16px;
-        line-height: 1.5;
-        max-width: 700px; /* Narrower text width */
-    }
-    .btn {
-        padding: 10px 30px;
-        font-size: 16px;
-    }
-    .hero {
-        padding: 20px; /* Add breathing room */
-        height: 100vh; /* Full screen for tablets */
     }
 }
 
-/* For Mobile Devices in Landscape and Small Tablets (Up to 768px) */
+/* For mobile devices in landscape mode and small tablets (up to 768px) */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        align-items: center;
-        gap: 15px; /* Space between items */
-        padding: 15px 20px;
+        gap: 10px;
+        padding: 20px;
     }
     nav ul {
-        flex-direction: column; /* Stack navigation links */
+        flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-    .logo {
-        max-height: 60px;
+    .hero {
+        padding: 20px;
+        height: 100vh;
     }
     .content {
         text-align: center;
-        padding: 0 20px; /* Narrower padding for smaller screens */
+        padding: 0 10px;
     }
     .content h1 {
-        font-size: 40px; /* Scaled for mid-sized screens */
+        font-size: 40px;
     }
     .content p {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.5;
-        width: 100%; /* Full width */
-    }
-    .btn {
-        padding: 8px 24px;
-        font-size: 14px; /* Smaller button text */
+        width: 100%;
     }
 }
 
-/* For Mobile Devices in Portrait Mode (Up to 480px) */
+/* For mobile devices in portrait mode (up to 480px) */
 @media (max-width: 480px) {
     nav {
-        padding: 10px 15px; /* Compact padding for small screens */
+        padding: 15px 20px;
     }
     .logo {
-        max-height: 50px; /* Reduced logo size */
-    }
-    .content {
-        padding: 0 10px; /* Minimal padding */
-        text-align: center;
-    }
-    .content h1 {
-        font-size: 32px; /* Compact heading */
-        line-height: 1.3;
-        margin-bottom: 10px;
-    }
-    .content p {
-        font-size: 14px; /* Smaller paragraph text */
-        line-height: 1.4;
+        max-height: 50px;
     }
     .btn {
-        padding: 6px 18px;
-        font-size: 12px; /* Compact buttons */
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .content h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    .content p {
+        font-size: 14px;
     }
 }
 
-/* For Very Small Mobile Screens (Up to 360px) */
+/* Small adjustments for very small mobile screens (up to 360px) */
 @media (max-width: 360px) {
     .content h1 {
-        font-size: 28px; /* Reduced size for smaller screens */
-        line-height: 1.2;
+        font-size: 28px;
     }
     .content p {
         font-size: 13px;
         line-height: 1.4;
-        margin-bottom: 15px;
     }
     .btn {
-        padding: 5px 16px; /* Tiny buttons */
-        font-size: 11px;
+        padding: 6px 16px;
+        font-size: 12px;
     }
 }
-
 
 .back_img{
     position: absolute;
@@ -390,77 +355,6 @@ nav ul li a:hover:after {
 }
 
 /* Responsive Design for smaller screens */
-/* Laptop Responsiveness (1025px to 1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .about {
-        padding: 40px;
-        margin: 0 auto; /* Center the content */
-        max-width: 1200px; /* Limit width for better readability */
-    }
-
-    .about h2 {
-        font-size: 2.5rem; /* Larger heading for laptops */
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .card-heading {
-        font-size: 1.5rem; /* Slightly larger card headings */
-    }
-
-    .card p {
-        font-size: 1.1rem; /* Larger font size for readability */
-        line-height: 1.6;
-    }
-
-    .card-image {
-        width: 150px;
-        height: 150px; /* Larger images for spacious layout */
-    }
-
-    /* Three-column layout for laptops */
-    .cards-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
-        gap: 30px; /* Increased gap for visual appeal */
-    }
-}
-
-/* Tablet Responsiveness (Up to 1024px) */
-@media (max-width: 1024px) {
-    .about {
-        padding: 30px;
-    }
-
-    .about h2 {
-        font-size: 2.2rem;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-    .card-heading {
-        font-size: 1.4rem; /* Adjust card headings for tablets */
-    }
-
-    .card p {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-
-    .card-image {
-        width: 130px;
-        height: 130px; /* Slightly smaller images */
-    }
-
-    /* Two-column layout for tablets */
-    .cards-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* 2 columns */
-        gap: 20px;
-    }
-}
-
-/* Mobile Responsiveness (Up to 768px) */
 @media (max-width: 768px) {
     .about {
         padding: 20px;
@@ -468,67 +362,31 @@ nav ul li a:hover:after {
 
     .about h2 {
         font-size: 2rem;
-        text-align: center;
-        margin-bottom: 10px;
     }
 
     .card-heading {
         font-size: 1.3rem;
-        text-align: center;
-    }
-
-    .card p {
-        font-size: 0.95rem;
-        line-height: 1.4;
-        text-align: justify;
-    }
-
-    .card-image {
-        width: 120px;
-        height: 120px; /* Compact size for smaller screens */
-    }
-
-    /* Two-column layout for phones (landscape) */
-    .cards-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px; /* Reduced gap for compact layout */
-    }
-}
-
-/* Small Mobile Screens (Up to 480px) */
-@media (max-width: 480px) {
-    .about {
-        padding: 15px;
-    }
-
-    .about h2 {
-        font-size: 1.8rem; /* Smaller font size for small screens */
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .card-heading {
-        font-size: 1.2rem;
-        text-align: center;
     }
 
     .card p {
         font-size: 0.9rem;
-        line-height: 1.3;
-        text-align: justify;
     }
 
     .card-image {
-        width: 100px;
-        height: 100px; /* Compact image size */
+        width: 120px;
+        height: 120px;
     }
 
-    /* Single-column layout for small screens */
+    /* Adjust grid layout for smaller screens */
     .cards-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px; /* Tight spacing for compact layout */
+        grid-template-columns: 1fr 1fr;  /* 2 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjust grid layout for very small screens */
+    .cards-wrapper {
+        grid-template-columns: 1fr;  /* 1 column */
     }
 }
 
@@ -733,85 +591,14 @@ section {
     opacity: 1;
 }
 
-
-/* Laptop Responsiveness (1025px to 1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .education h2 {
-        font-size: 2.5rem; /* Larger heading for laptops */
-        text-align: center;
-    }
-
-    .education-card {
-        padding: 30px; /* Moderate padding for spacious layout */
-        margin: 15px; /* Add space between cards */
-        border-radius: 10px; /* Smooth corners for modern look */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    }
-
-    .edu-header h1 {
-        font-size: 2rem; /* Slightly larger for emphasis */
-    }
-
-    .edu-header h6, .edu-header h4 {
-        font-size: 1.2rem;
-    }
-
-    .edu-body h5 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-
-    .edu-body p {
-        font-size: 1.2rem;
-        line-height: 1.6; /* Better readability */
-    }
-}
-
-/* Tablet Responsiveness (Up to 1024px) */
-@media (max-width: 1024px) {
+/* Responsive Design */
+@media (max-width: 768px) {
     .education h2 {
         font-size: 2.2rem;
-        text-align: center;
-        margin-bottom: 20px; /* Add spacing for clarity */
     }
 
     .education-card {
         padding: 25px;
-        margin: 10px; /* Reduce spacing between cards */
-        border-radius: 8px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .edu-header h1 {
-        font-size: 1.8rem; /* Scaled for tablet screens */
-    }
-
-    .edu-header h6, .edu-header h4 {
-        font-size: 1rem;
-    }
-
-    .edu-body h5 {
-        font-size: 1.4rem;
-    }
-
-    .edu-body p {
-        font-size: 1.1rem;
-        line-height: 1.5;
-    }
-}
-
-/* Mobile Responsiveness (Up to 768px) */
-@media (max-width: 768px) {
-    .education h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .education-card {
-        padding: 20px;
-        margin: 10px; /* Compact spacing for mobile layout */
-        border-radius: 6px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
     .edu-header h1 {
@@ -819,56 +606,39 @@ section {
     }
 
     .edu-header h6, .edu-header h4 {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .edu-body h5 {
         font-size: 1.3rem;
-        margin-bottom: 8px; /* Adjust spacing */
     }
 
     .edu-body p {
         font-size: 1rem;
-        line-height: 1.4;
     }
 }
 
-/* Small Mobile Screens (Up to 480px) */
 @media (max-width: 480px) {
-    .education h2 {
-        font-size: 1.8rem; /* Smaller heading for compact screens */
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
     .education-card {
-        padding: 15px;
-        margin: 8px; /* Minimal spacing */
-        border-radius: 5px; /* Smooth, compact corners */
+        padding: 20px;
     }
 
     .edu-header h1 {
-        font-size: 1.4rem; /* Reduced size for small screens */
-        text-align: center;
+        font-size: 1.4rem;
     }
 
     .edu-header h6, .edu-header h4 {
         font-size: 0.9rem;
-        text-align: center;
     }
 
     .edu-body h5 {
         font-size: 1.2rem;
-        margin-bottom: 5px; /* Tighter spacing */
     }
 
     .edu-body p {
         font-size: 0.9rem;
-        line-height: 1.3;
-        text-align: justify;
     }
 }
-
 
 
 
@@ -1024,113 +794,57 @@ section {
 }
 
 /* Responsive Design */
-/* Tablet Responsiveness (Up to 1024px) */
 @media (max-width: 1024px) {
     .pie-chart-container {
         flex-direction: column; /* Stacks chart and legend */
-        align-items: center;
-        gap: 20px; /* Adds spacing between chart and legend */
     }
 
     .skills-legend {
-        margin: 0; /* Center legend below chart */
-        text-align: center;
-        font-size: 1.1rem; /* Slightly smaller text for better fit */
-        width: 80%; /* Center legend content */
-    }
-
-    .legend-item {
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
-
-    .skills h2 {
-        font-size: 2.2rem; /* Adjusted for tablet screens */
-        text-align: center;
-    }
-
-    .skills-container {
-        grid-template-columns: 1fr 1fr; /* Two-column layout for skill cards */
-        gap: 20px; /* Space between skill cards */
-        padding: 20px;
-    }
-
-    .pie-chart {
-        width: 300px;
-        height: 300px; /* Moderate size for tablet screens */
+        margin-left: 0;
+        margin-top: 20px;
     }
 }
 
-/* Mobile Responsiveness (Up to 768px) */
 @media (max-width: 768px) {
     .skills h2 {
-        font-size: 2rem; /* Reduce heading size for smaller screens */
-        text-align: center;
+        font-size: 2rem;
     }
 
     .skills-container {
         grid-template-columns: 1fr; /* Single column layout for skill cards */
-        gap: 15px; /* Reduce gap for compact layout */
-        padding: 15px;
     }
 
     .skills-legend {
-        font-size: 1rem; /* Adjust for smaller screens */
-        text-align: center;
-        margin-top: 15px;
+        width: 100%;
+        font-size: 1rem;
     }
 
     .legend-item {
-        font-size: 0.95rem;
-        margin-bottom: 8px;
+        font-size: 1rem;
     }
 
     .pie-chart {
         width: 250px;
-        height: 250px; /* Smaller pie chart for mobile */
-    }
-
-    .skill-card {
-        padding: 15px;
-    }
-
-    .skill-card h3 {
-        font-size: 1.3rem; /* Adjust heading size */
-    }
-
-    .skill-card p {
-        font-size: 1rem;
+        height: 250px; /* Reduce pie chart size for smaller screens */
     }
 }
 
-/* Small Mobile Screens (Up to 480px) */
 @media (max-width: 480px) {
     .skills h2 {
-        font-size: 1.8rem; /* Further reduce heading size */
-        text-align: center;
-    }
-
-    .skills-container {
-        padding: 10px;
-        gap: 10px; /* Compact spacing */
-    }
-
-    .skills-legend {
-        font-size: 0.9rem; /* Smaller text for very small screens */
-    }
-
-    .legend-item {
-        font-size: 0.85rem;
-        margin-bottom: 5px;
+        font-size: 1.8rem;
     }
 
     .pie-chart {
         width: 200px;
-        height: 200px; /* Further reduce chart size */
+        height: 200px;
+    }
+
+    .skills-legend {
+        font-size: 0.9rem;
     }
 
     .skill-card {
-        padding: 10px;
+        padding: 15px;
     }
 
     .skill-card h3 {
@@ -1139,52 +853,8 @@ section {
 
     .skill-card p {
         font-size: 0.9rem;
-        line-height: 1.4;
     }
 }
-
-/* Laptop Responsiveness (1025px to 1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .skills h2 {
-        font-size: 2.5rem; /* Larger heading for laptops */
-        text-align: center;
-    }
-
-    .skills-container {
-        grid-template-columns: 1fr 1fr 1fr; /* Three-column layout for skill cards */
-        gap: 25px;
-        padding: 30px;
-    }
-
-    .skills-legend {
-        font-size: 1.2rem; /* Clearer text for laptops */
-        text-align: left;
-    }
-
-    .legend-item {
-        font-size: 1.1rem;
-        margin-bottom: 10px;
-    }
-
-    .pie-chart {
-        width: 350px;
-        height: 350px; /* Larger chart for laptops */
-    }
-
-    .skill-card {
-        padding: 20px;
-    }
-
-    .skill-card h3 {
-        font-size: 1.5rem;
-    }
-
-    .skill-card p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-    }
-}
-
 
 
 
@@ -1335,52 +1005,18 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Mobile Responsiveness (Small screens, up to 480px) */
-@media (max-width: 480px) {
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
     .projects h2 {
-        font-size: 1.8rem; /* Slightly smaller for small screens */
-        text-align: center;
+        font-size: 2.2rem;
     }
 
     .project-title {
-        font-size: 1.2rem;
-        text-align: center;
+        font-size: 1.4rem;
     }
 
     .project-description {
-        font-size: 0.95rem;
-        line-height: 1.4;
-        text-align: justify;
-    }
-
-    .project-links .btn {
-        font-size: 0.9rem;
-        padding: 8px 15px;
-    }
-
-    /* Single column layout for small screens */
-    .project-grid {
-        grid-template-columns: 1fr;
-        gap: 15px; /* Reduce gap for compact screens */
-        padding: 10px;
-    }
-}
-
-/* Tablet Responsiveness (Medium screens, 481px to 1024px) */
-@media (min-width: 481px) and (max-width: 1024px) {
-    .projects h2 {
-        font-size: 2.4rem;
-        text-align: center;
-    }
-
-    .project-title {
-        font-size: 1.6rem;
-    }
-
-    .project-description {
-        font-size: 1.1rem;
-        line-height: 1.5;
-        text-align: justify;
+        font-size: 1rem;
     }
 
     .project-links .btn {
@@ -1388,72 +1024,18 @@ section {
         padding: 10px 20px;
     }
 
-    /* Two-column layout for tablets */
+    /* Adjust grid layout for smaller screens */
     .project-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 20px; /* Moderate spacing between cards */
-        padding: 20px;
+        grid-template-columns: 1fr 1fr;  /* 2 columns */
     }
 }
 
-/* Laptop Responsiveness (Large screens, 1025px to 1440px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .projects h2 {
-        font-size: 2.8rem;
-        text-align: center;
-    }
-
-    .project-title {
-        font-size: 1.8rem;
-    }
-
-    .project-description {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        text-align: justify;
-    }
-
-    .project-links .btn {
-        font-size: 1.1rem;
-        padding: 12px 25px;
-    }
-
-    /* Three-column layout for laptops */
+@media (max-width: 480px) {
+    /* Further adjust grid layout for very small screens */
     .project-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 25px;
-        padding: 30px;
+        grid-template-columns: 1fr;  /* 1 column */
     }
 }
-
-/* Default Desktop Responsiveness (Larger screens, above 1440px) */
-@media (min-width: 1441px) {
-    .projects h2 {
-        font-size: 3rem;
-    }
-
-    .project-title {
-        font-size: 2rem;
-    }
-
-    .project-description {
-        font-size: 1.4rem;
-        line-height: 1.8;
-    }
-
-    .project-links .btn {
-        font-size: 1.2rem;
-        padding: 15px 30px;
-    }
-
-    /* Maintain three-column layout with wider spacing */
-    .project-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
-        padding: 40px;
-    }
-}
-
 
 
 
@@ -1559,37 +1141,17 @@ a:hover {
 }
 
 /* Responsive Design */
-/* For tablets (screen width between 769px and 1024px) */
-@media (max-width: 1024px) and (min-width: 769px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        padding: 20px;
-    }
-
-    .footer-about,
-    .footer-contact,
-    .footer-social {
-        text-align: left;
-        margin-bottom: 10px;
-    }
-}
-
-/* For mobile screens (screen width up to 768px) */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 15px;
     }
 
     .footer-about,
     .footer-contact,
     .footer-social {
         text-align: center;
-        margin-bottom: 15px;
     }
 }
 
