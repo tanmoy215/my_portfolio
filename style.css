@@ -19,7 +19,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: rgba(255, 255, 255, 0.7);
+    background-color: #f7f7f7;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
@@ -92,12 +92,21 @@ nav ul li a:hover:after {
     text-align: left;
     max-width: 600px;
     color: #333;
-    margin-left: 10px;
+    padding-left: 1vw;
     position: relative;
     top: 20vh;
     left: 21vh;
+    display: inline-block;
 }
-
+.t{
+    height: 70vh;
+    width: 50vw;
+    background-image: url(./tanmoy.gif);
+    background-size: cover;
+    position: absolute;
+     left: 45vw;
+     top: 21vh;
+}
 .content h1 span {
     color: #fd4766;
 }
@@ -185,8 +194,14 @@ nav ul li a:hover:after {
         font-size: 32px;
         line-height: 1.2;
     }
+    .content{
+        display: none;
+    }
     .content p {
         font-size: 14px;
+    }
+    .t{
+        background-image: none;
     }
 }
 
@@ -205,13 +220,29 @@ nav ul li a:hover:after {
     }
 }
 
-.back_img{
-    position: absolute;
-    left: 75vh;
-    height: 700px;
-    width: 800px;
-     background-image: url(tanmoy.gif);
+
+
+/* //extra */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    background-color: white; /* Optional: Make sure the header has a background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
 }
+
+
+.content {
+    margin-top: 100px; /* Push content below the fixed header */
+    text-align: center;
+}
+
+.t {
+    margin-top: 50px; /* Optional spacing adjustment */
+}
+
 
 
 
@@ -243,7 +274,7 @@ nav ul li a:hover:after {
 
 /* General Section Styling */
 .fst {
-    margin-top: 45%;
+    margin-top: 25%;
     padding: 20px;
 }
 
