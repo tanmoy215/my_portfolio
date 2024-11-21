@@ -213,6 +213,7 @@ nav ul li a:hover:after {
     .content p {
         font-size: 13px;
         line-height: 1.4;
+        display: none;
     }
     .btn {
         padding: 6px 16px;
